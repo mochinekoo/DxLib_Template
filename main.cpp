@@ -1,0 +1,36 @@
+#include <DxLib.h>
+#include "framework.h"
+
+int initApplication(); //アプリケーションを初期化する関数
+
+int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
+    if (initApplication() != 0) {
+        return -1;
+    }
+
+    while (true) {
+        ClearDrawScreen();
+
+        ScreenFlip();
+        WaitTimer(1000 / GameScreen::FPS);
+        if (ProcessMessage() == -1) {
+            break;
+        }
+    }
+}
+
+int initApplication() {
+    SetMainWindowText(GameScreen::TITLE);
+    ChangeFontType(DX_FONTTYPE_ANTIALIASING_EDGE_16X16); //アンチエイリアシング＆エッジが使えるように
+    ChangeWindowMode(true); //ウインドウモードで起動する
+    SetGraphMode(GameScreen::WIDTH, GameScreen::HEIGHT, GameScreen::COLORBIT);
+    SetAlwaysRunFlag(true);
+    if (DxLib_Init() == -1) {
+        return -1;
+    }
+
+    SetBackgroundColor(GameScreen::BACKGROUND[0], GameScreen::BACKGROUND[1], GameScreen::BACKGROUND[2]);
+    SetDrawScreen(DX_SCREEN_BACK);
+
+    return 0;
+}
