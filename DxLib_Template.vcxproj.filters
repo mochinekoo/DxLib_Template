@@ -5,15 +5,33 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{27dc0c00-4a64-4855-a0ba-06b93c580b49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{6a0f5f46-816b-4c4b-adbb-21bff062c681}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="Location2D.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Location2D.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
