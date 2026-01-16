@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="DxLib_Template.vcxproj" />
+  <Project Path="DxLib_Template.vcxproj" Id="6946cc99-dd9e-4581-99e6-b631df432981" />
 </Solution>
