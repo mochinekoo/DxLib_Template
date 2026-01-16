@@ -1,6 +1,7 @@
 #include <DxLib.h>
 #include "framework.h"
 #include "SceneManager.h"
+#include "SubWindow.h"
 
 int initApplication(); //アプリケーションを初期化する関数
 
@@ -8,6 +9,8 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
     if (initApplication() != 0) {
         return -1;
     }
+
+	CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)createSubWindow, nullptr, 0, nullptr);
 
     while (true) {
         ClearDrawScreen();

@@ -136,6 +136,7 @@
     <ClCompile Include="Matrix2D.cpp" />
     <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SubWindow.cpp" />
     <ClCompile Include="TestDraw.cpp" />
     <ClCompile Include="TextDraw.cpp" />
     <ClCompile Include="Vector2D.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="Matrix2D.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SubWindow.h" />
     <ClInclude Include="TestDraw.h" />
     <ClInclude Include="TextDraw.h" />
     <ClInclude Include="GameUtil.h" />
