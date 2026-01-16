@@ -133,6 +133,7 @@
     <ClCompile Include="DrawBase.cpp" />
     <ClCompile Include="Location2D.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Matrix2D.cpp" />
     <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="TestDraw.cpp" />
@@ -144,6 +145,8 @@
     <ClInclude Include="DrawBase.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Location2D.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="Matrix2D.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="TestDraw.h" />

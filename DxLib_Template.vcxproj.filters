@@ -46,6 +46,9 @@
     <ClCompile Include="TextDraw.cpp">
       <Filter>Draw</Filter>
     </ClCompile>
+    <ClCompile Include="Matrix2D.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -76,6 +79,12 @@
       <Filter>Draw</Filter>
     </ClInclude>
     <ClInclude Include="GameUtil.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2D.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
       <Filter>Library</Filter>
     </ClInclude>
   </ItemGroup>
